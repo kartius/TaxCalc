@@ -1,4 +1,4 @@
-package com.taxcalc.spring.config;
+package com.taxcalc.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -14,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  */
 @EnableWebMvc
 @Configuration
-@ComponentScan()
+@ComponentScan("com.taxcalc")
 //@PropertySource("file:/etc/elizz.properties")
 public class AppConfig  extends WebMvcConfigurerAdapter {
     @Bean
@@ -33,4 +33,6 @@ public class AppConfig  extends WebMvcConfigurerAdapter {
     ) {
         configurer.enable();
     }
+
+
 }
