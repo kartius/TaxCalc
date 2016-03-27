@@ -1,4 +1,4 @@
-package com.taxcalc.spring.config;
+package com.taxcalc.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
